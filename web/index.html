@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0b12" id="themeColor">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Планер</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <button class="ibtn hidden" id="hBack" aria-label="Назад"></button>
+    <button class="hav" id="hAcc" aria-label="Профиль"><img src="avatar.png" alt="" onerror="this.remove()"><span class="dot" id="tgDot"></span></button>
+    <div class="grow">
+      <div class="sub" id="hSub"></div>
+      <h1 id="hTitle">Главная</h1>
+    </div>
+    <span id="tgState" class="hidden"></span>
+    <button class="ibtn" id="hSearch" aria-label="Поиск"></button>
+    <button class="ibtn hidden" id="hLock" aria-label="Заблокировать"></button>
+  </header>
+  <main id="view"></main>
+  <nav id="nav"></nav>
+</div>
+<div id="sheet" class="hidden"></div>
+<div id="lock" class="hidden"></div>
+<div id="auth" class="hidden"></div>
+<div class="toast" id="toast"></div>
+<script src="config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/uicons.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/tg.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/main.js"></script>
+<script src="js/more.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/extra.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
